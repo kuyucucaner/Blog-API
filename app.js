@@ -1,3 +1,4 @@
+const http = require('http');
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -38,5 +39,10 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+const port = process.env.PORT || 5000;
 
-module.exports = app;
+const server = http.createServer(app);
+
+server.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
