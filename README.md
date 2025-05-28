@@ -1,7 +1,7 @@
 # 📝 Blog API 
 
 **Blog API** is a backend application that provides core blogging functionality through RESTful APIs. It allows users to register and log in using JWT authentication, create and manage blog posts, and perform CRUD operations on both posts and comments.
-
+ 
 ---
 
 ## 🎯 Features
